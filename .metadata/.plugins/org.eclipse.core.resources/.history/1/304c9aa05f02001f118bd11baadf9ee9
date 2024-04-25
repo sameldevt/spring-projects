@@ -1,0 +1,8 @@
+package med.voll.api.infra;
+
+import org.springframework.web.bind.annotation.RestControllerAdvice;
+
+@RestControllerAdvice // indica que essa classe sera responsavel por tratar erros da api
+public class TratadorDeErros {
+
+}

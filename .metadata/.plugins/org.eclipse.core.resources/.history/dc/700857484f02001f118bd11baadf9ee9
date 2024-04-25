@@ -1,0 +1,15 @@
+package med.voll.api.dto;
+
+import med.voll.api.entities.medico_entity.Especialidade;
+
+public record DadosListagemMedico(
+		String nome,
+		String email,
+		String crm,
+		Especialidade especialide) {
+	
+		public DadosListagemMedico(Medico medico) {
+			
+		}
+
+}

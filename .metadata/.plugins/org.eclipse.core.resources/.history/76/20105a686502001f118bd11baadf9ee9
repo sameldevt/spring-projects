@@ -1,0 +1,8 @@
+package med.voll.api.services;
+
+import org.springframework.stereotype.Service;
+
+@Service // diz que essa classe é responsavel por fornecer um serviço
+public class AutenticacaoServices {
+
+}

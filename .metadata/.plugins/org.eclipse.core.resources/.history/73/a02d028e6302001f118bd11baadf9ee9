@@ -1,0 +1,8 @@
+spring.application.name=api
+spring.datasource.url=jdbc:postgresql://192.168.0.15:5432/vollmed_api
+spring.datasource.username=postgres
+spring.datasource.password=123
+spring.jpa.show-sql=true
+spring.jpa.properties.hibernate.format_sql=true 
+
+server.error.include-stacktrace=never

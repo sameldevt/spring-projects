@@ -1,0 +1,15 @@
+package med.voll.api.dto;
+
+import jakarta.validation.constraints.NotNull;
+import med.voll.api.entities.medico_entity.Especialidade;
+
+public record DadosCadastroMedico(
+		@NotNull
+		String nome, 
+		String email, 
+		String crm, 
+		Especialidade especialidade, 
+		DadosEndereco endereco) 
+{
+
+}

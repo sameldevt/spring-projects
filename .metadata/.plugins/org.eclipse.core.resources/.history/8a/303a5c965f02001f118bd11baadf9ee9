@@ -1,0 +1,6 @@
+package med.voll.api.infra;
+
+@RestControllerAdvice
+public class TratadorDeErros {
+
+}

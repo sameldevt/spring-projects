@@ -1,0 +1,4 @@
+spring.application.name=api
+spring.datasource.url=jdbc://192.168.0.1/vollmed_api
+spring.datasource.username=postgres
+spring.datasource.password=123

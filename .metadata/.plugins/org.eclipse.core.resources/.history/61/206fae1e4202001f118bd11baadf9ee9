@@ -1,0 +1,3 @@
+spring.application.name=api
+spring.datasource.url=jdbc://localhost/vollmed_api
+spring.datasource.username=

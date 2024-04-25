@@ -1,0 +1,18 @@
+package med.voll.api.dto;
+
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotNull;
+import med.voll.api.entities.medico_entity.Especialidade;
+
+public record DadosCadastroMedico(
+		// @NotNull
+		@NotBlank // verifica se nao esta em branco. tambem verifica se nao esta nulo. 
+				  // dessa forma nao precisamos usar o @NotNull
+		String nome, 
+		String email, 
+		String crm, 
+		Especialidade especialidade, 
+		DadosEndereco endereco) 
+{
+
+}

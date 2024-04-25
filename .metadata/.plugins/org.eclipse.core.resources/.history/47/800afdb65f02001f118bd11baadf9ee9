@@ -1,0 +1,16 @@
+package med.voll.api.infra;
+
+import org.springframework.web.bind.annotation.ExceptionHandler;
+import org.springframework.web.bind.annotation.RestControllerAdvice;
+
+import jakarta.persistence.EntityNotFoundException;
+
+@RestControllerAdvice // indica que essa classe sera responsavel por tratar erros da api
+public class TratadorDeErros {
+	
+	@ExceptionHandler(EntityNotFoundException.class)
+	public ResponseEntity tratarErros() {
+		return ResponseEntity.notFound().build();
+	}
+
+}

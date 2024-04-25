@@ -1,0 +1,7 @@
+INDEX VERSION 1.134+C:\Users\samue\Documents\alura\.metadata\.plugins\org.eclipse.jdt.core
+1865797976.index
+670440827.index
+4167780434.index
+61378685.index
+3426213183.index
+2353393639.index

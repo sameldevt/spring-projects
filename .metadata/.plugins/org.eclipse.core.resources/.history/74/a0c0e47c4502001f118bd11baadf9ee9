@@ -1,0 +1,5 @@
+package med.voll.api.entities.medico;
+
+public class Medico {
+
+}

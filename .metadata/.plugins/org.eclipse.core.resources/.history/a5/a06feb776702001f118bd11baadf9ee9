@@ -1,0 +1,10 @@
+package med.voll.api.controller;
+
+@RestController
+@RequestMapping("/login")
+public class AutenticacaoController {
+
+	public ResponseEntity efetuarLogin() {
+		
+	}
+}

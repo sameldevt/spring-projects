@@ -1,0 +1,11 @@
+package med.voll.api.entities.usuario;
+
+@Table(name = "usuarios")
+@Entity(name = "Usuario")
+
+public class Usuario {
+	
+	private Long id;
+	private String login;
+	private String senha;
+}

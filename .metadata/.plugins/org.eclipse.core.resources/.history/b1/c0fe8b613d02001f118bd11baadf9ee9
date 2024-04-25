@@ -1,0 +1,8 @@
+package med.voll.api.controller;
+
+import org.springframework.stereotype.Controller;
+
+@RestController
+public class HelloController {
+
+}

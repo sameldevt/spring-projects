@@ -1,0 +1,29 @@
+package med.voll.api.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import jakarta.transaction.Transactional;
+import jakarta.validation.Valid;
+import med.voll.api.dto.DadosCadastroMedico;
+import med.voll.api.entities.medico_entity.Medico;
+import med.voll.api.repository.MedicoRepository;
+
+@RestController
+@RequestMapping("medicos")
+public class MedicoController {
+
+	@Autowired // indica para o spring que a interface repository precisa ser instanciada nessa classe
+	// essa tecnica é chamada de injeção de dependencia e é feita automaticamente pelo spring
+	private MedicoRepository repository;
+	
+	@PostMapping
+	@Transactional
+	public void cadastrar(@RequestBody @Valid DadosCadastroMedico dados) { //@RequestBody = corpo da requisição
+		repository.save(new Medico(dados));
+	}
+	
+}

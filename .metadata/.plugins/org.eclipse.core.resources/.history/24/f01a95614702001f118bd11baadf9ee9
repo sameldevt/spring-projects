@@ -1,0 +1,11 @@
+package br.com.med.voll.api.repository;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import med.voll.api.entities.medico.Medico;
+
+// Repositories são interfaces que simplificam o conceito DAO (data access object), muito usado
+// em aplicações que nao usam spring
+public interface MedicoRepository extends JpaRepository<Medico, Long> {
+
+}
